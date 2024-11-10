@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import Navbar from './components/NavbarComponent.vue'
-import Footer from './components/PageFooter.vue';
+import Navbar from './components/TheNavbar.vue'
+import Footer from './components/PageFooter.vue'
 
 export default {
   components: {
     Navbar,
     Footer,
   },
-};
+}
 </script>
 
 <style>
