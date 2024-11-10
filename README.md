@@ -1,26 +1,39 @@
-<h1 align="center">
-  Personal Portfolio  
-</h1>
+# vue-personal-portfolio
 
-<h4 align="center">
-  Personal Portfolio Website created using Vue.js, Tailwind CSS and hosted on Vercel.
-</h4>
+This template should help get you started developing with Vue 3 in Vite.
 
-<p align="center">
-  <a href="https://vuejs.org/">
-    <img src="https://img.shields.io/badge/Vue.js-v3.5.10-_?logo=vuedotjs&labelColor=%20%2334485f&color=%2341b982"
-         alt="Vue.js Badge">
-  </a>
-  <a href="https://tailwindcss.com/">
-    <img src="https://img.shields.io/badge/Tailwind%20CSS-v3.4.13-_?logo=tailwindcss&labelColor=%20%2334485f&color=%2338bcf9"
-         alt="Tailwind CSS Badge">
-  </a>
-  <a href="https://vercel.com/home">
-    <img src="https://img.shields.io/badge/Vercel-Current-_?logo=vercel&labelColor=%20%2334485f&color=%23000101"
-         alt="Vercel Badge">
-  </a>
-</p>
+## Recommended IDE Setup
 
-<p align="center">
-  Link to my website: <a href="https://www.google.com/">Portfolio Website Name</a>
-</p>
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
