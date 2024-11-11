@@ -1,3 +1,14 @@
+<script>
+export default {
+  name: 'NavbarComponent',
+  data() {
+    return {
+      toggleButton: false,
+    }
+  },
+}
+</script>
+
 <template>
   <header class="bg-gray-800 p-4">
     <div class="flex items-center m-1 justify-between">
@@ -16,17 +27,6 @@
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  name: 'NavbarComponent',
-  data() {
-    return {
-      toggleButton: false,
-    }
-  },
-}
-</script>
 
 <style scoped>
 .navbar-logo {
