@@ -4,8 +4,16 @@
   <div class="pagewrap">
     <div class="introduction space-x-4 my-4">
       <h1 class="text-4xl font-bold my-4">About Me</h1>
-      <h3 class="text-2xl my-4">Who am I?</h3>
-      <p>I'm an aspiring Software Engineer.</p>
+      <p>
+        I graduated from University of California, San Diego with a degree in Math & Computer
+        Science and a minor in Finance.
+      </p>
+      <p>I focus on Full Stack Development with proficiencies in:</p>
+      <p>Technical Skills</p>
+      <p>- Programming Languages: Java, Python, C/C++, JavaScript, TypeScript</p>
+      <p>- Frameworks & Libraries: Vue.js, React, Node.js, Tailwind, Django</p>
+      <p>- Database Systems: MongoDB, SQLite</p>
+      <p>- Developer Tools: VS Code, Eclipse, IntelliJ, Git</p>
     </div>
 
     <div class="social-links flex space-x-4 my-4">

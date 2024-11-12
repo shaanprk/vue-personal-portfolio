@@ -26,6 +26,14 @@ export default {
           githubLink: '',
           liveDemoLink: '',
         },
+        {
+          id: 3,
+          title: 'd',
+          description: 'd',
+          techStack: '',
+          githubLink: '',
+          liveDemoLink: '',
+        },
       ],
     }
   },
