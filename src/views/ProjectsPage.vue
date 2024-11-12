@@ -17,6 +17,15 @@ export default {
           githubLink: 'https://github.com/shaanprk/Vue-Personal-Portfolio',
           liveDemoLink: 'https://www.google.com/',
         },
+        {
+          id: 2,
+          title: 'Credit Card Tracker',
+          description:
+            'Financial Tracker to track purchases and points across various credit cards',
+          techStack: 'React, Django, SQLite',
+          githubLink: '',
+          liveDemoLink: '',
+        },
       ],
     }
   },
@@ -37,10 +46,10 @@ export default {
         :liveDemoLink="project.liveDemoLink"
       />
     </div>
-    <h3 class="text-2xl my-4">Let's connect!</h3>
-    <router-link to="/contact">
+    <h3 class="text-2xl my-4">Get to know me better!</h3>
+    <router-link to="/about">
       <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-8">
-        Contact
+        About me
       </button>
     </router-link>
   </div>

@@ -19,9 +19,9 @@ export default {
       <nav class="navbar">
         <ul class="flex space-x-4 text-white w-full justify-between">
           <li class="navbar-links"><router-link to="/">Home</router-link></li>
-          <li class="navbar-links"><router-link to="/about">About</router-link></li>
           <li class="navbar-links"><router-link to="/projects">Projects</router-link></li>
-          <li class="navbar-links"><router-link to="/contact">Contact</router-link></li>
+          <li class="navbar-links"><router-link to="/about">About</router-link></li>
+          <!-- <li class="navbar-links"><router-link to="/contact">Contact</router-link></li> -->
         </ul>
       </nav>
     </div>

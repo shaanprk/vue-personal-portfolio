@@ -6,10 +6,10 @@
       <p>{{ greeting }}</p>
       <p>I am an aspiring SWE based out of California.</p>
     </div>
-    <h3 class="text-2xl my-4">Get to know me better!</h3>
-    <router-link to="/about">
+    <h3 class="text-2xl my-4">Check out what I've worked on!</h3>
+    <router-link to="/projects">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        About Me
+        Projects
       </button>
     </router-link>
   </div>
