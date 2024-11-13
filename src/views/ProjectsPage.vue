@@ -2,7 +2,7 @@
 import ProjectCard from '@/components/ProjectCard.vue'
 
 export default {
-  name: 'Projects',
+  name: 'ProjectsPage',
   components: {
     ProjectCard,
   },
