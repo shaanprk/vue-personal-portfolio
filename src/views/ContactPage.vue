@@ -6,10 +6,11 @@ export default {
 
 <template>
   <div class="content">
-    <h1 class="text-4xl font-bold my-4">Contact Me</h1>
-    <p></p>
+    <h1 class="text-4xl font-bold my-4">Get in Touch</h1>
+    <p>Thank you for visiting my portfolio! I'd love to connect and hear from you!</p>
   </div>
 
+  <h2 class="text-3xl">Ways to Connect</h2>
   <div class="social-links flex space-x-4 my-4">
     <a
       href="https://www.linkedin.com/in/jeongbin-sean-park/"
@@ -31,15 +32,25 @@ export default {
         />
       </svg>
     </a>
-    <a href="mailto: imbinpark@gmail.com" target="_blank" rel="noopener noreferrer">
+    <!-- <a href="mailto: imbinpark@gmail.com" target="_blank" rel="noopener noreferrer">
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="75" height="75">
         <title>Gmail</title>
         <path
           d="M24 5.457v1d3.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+          fill="#000000"
         />
       </svg>
-    </a>
+    </a> -->
   </div>
 </template>
 
 <style></style>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+  <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
+  <title>Gmail</title>
+        <path
+          d="M24 5.457v1d3.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+          fill="#FF0000"
+        />
+</svg> -->
