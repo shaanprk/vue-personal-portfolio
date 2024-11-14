@@ -1,14 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/HomePage.vue'
-import About from '../views/AboutPage.vue'
-import Projects from '../views/ProjectsPage.vue'
-import Contact from '../views/ContactPage.vue'
+import HomePage from '../views/HomePage.vue'
+import AboutPage from '../views/AboutPage.vue'
+import ProjectsPage from '../views/ProjectsPage.vue'
+import ContactPage from '../views/ContactPage.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home, meta: { title: 'Home' } },
-  { path: '/about', name: 'About', component: About, meta: { title: 'About' } },
-  { path: '/projects', name: 'Projects', component: Projects, meta: { title: 'Projects' } },
-  { path: '/contact', name: 'Contact', component: Contact, meta: { title: 'Contact' } },
+  {
+    path: '/',
+    name: 'Home',
+    component: HomePage,
+    meta: {
+      title: 'Home',
+      description: "Welcome to Jeongbin Sean Park's Portfolio",
+    },
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutPage,
+    meta: {
+      title: 'About',
+      description: 'Learn more about Jeongbin Sean Park outside of work',
+    },
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: ProjectsPage,
+    meta: {
+      title: 'Projects',
+      description: 'Explore the work of Jeongbin Sean Park',
+    },
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: ContactPage,
+    meta: {
+      title: 'Contact',
+      description: 'Reach out and connect with Jeongbin Sean Park',
+    },
+  },
 ]
 
 const router = createRouter({
