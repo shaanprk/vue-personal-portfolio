@@ -56,11 +56,11 @@ export default {
       </div>
     </div> -->
 
-    <div class="spotify-data my-8">
+    <!-- <div class="spotify-data my-8">
       <h3 class="text-2xl mb-2">What Am I Listening To?</h3>
       <p>Insert Spotify API Data Here</p>
       <p>Updated Every 30 Days</p>
-    </div>
+    </div> -->
     <!-- <h3 class="text-2xl my-4">Check out what I've been working on!</h3>
     <router-link to="/projects">
       <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
