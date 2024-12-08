@@ -17,22 +17,25 @@ export default {
   name: 'SpotifyData',
   data() {
     return {
-      topArtists: [],
+      topArtists: [], // Store artist data
       intervalId: null,
     }
   },
   methods: {
     async fetchTopArtists() {
       try {
-        const response = await axios.get('https://your-backend-url/api/top-artists')
-        this.topArtists = response.data.artists || []
+        const response = await axios.get('http://localhost:3000/api/top-artists')
+        this.topArtists = response.data.artists.map((artist) => ({
+          id: artist.id,
+          name: artist.name,
+        }))
       } catch (error) {
         console.error('Error fetching Spotify data:', error)
       }
     },
     startFetching() {
       this.fetchTopArtists()
-      this.intervalId = setInterval(this.fetchTopArtists, 3600000) // Fetch every hour
+      this.intervalId = setInterval(this.fetchTopArtists, 3600000) // Fetch data every hour
     },
     stopFetching() {
       if (this.intervalId) {
