@@ -23,6 +23,12 @@ export default {
       default: '',
     },
   },
+  computed: {
+    githubRepoName() {
+      const parts = this.githubLink.split('/')
+      return parts.length > 0 ? parts[parts.length - 1] : ''
+    },
+  },
 }
 </script>
 
@@ -31,8 +37,16 @@ export default {
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
     <p>Tech Stack: {{ techStack }}</p>
-    <p>Github: {{ githubLink }}</p>
-    <p>Live Demo: {{ liveDemoLink }}</p>
+    <p>
+      Github: <a :href="githubLink">{{ githubRepoName }}</a>
+    </p>
+    <p>
+      Live Demo:
+      <span v-if="liveDemoLink">
+        <a :href="liveDemoLink">{{ liveDemoLink }}</a>
+      </span>
+      <span v-else> Unavailable </span>
+    </p>
   </div>
 </template>
 

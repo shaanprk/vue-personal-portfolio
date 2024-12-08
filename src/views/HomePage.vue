@@ -12,6 +12,13 @@ export default {
         { message: 'こんにちは', language: 'Japanese' },
         { message: '你好', language: 'Chinese (Mandarin)' },
         { message: 'Hola', language: 'Spanish' },
+        { message: 'Hallo', language: 'German' },
+        { message: 'Привет', language: 'Russian' },
+        { message: 'नमस्ते', language: 'Hindi' },
+        { message: 'Hej', language: 'Swedish' },
+        { message: 'Salam', language: 'Persian' },
+        { message: 'Shalom', language: 'Hebrew' },
+        { message: 'Kamusta', language: 'Filipino' },
       ],
       greeting: { message: 'Hello', language: 'English' },
     }
