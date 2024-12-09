@@ -1,15 +1,3 @@
-<template>
-  <div class="spotify-data">
-    <h2>Top 10 Artists (Last 30 Days)</h2>
-    <ul v-if="topArtists.length > 0">
-      <li v-for="(artist, index) in topArtists" :key="artist.id">
-        {{ index + 1 }}. {{ artist.name }}
-      </li>
-    </ul>
-    <p v-else>Loading your top artists...</p>
-  </div>
-</template>
-
 <script>
 import axios from 'axios'
 
@@ -17,44 +5,35 @@ export default {
   name: 'SpotifyData',
   data() {
     return {
-      topArtists: [], // Store artist data
-      intervalId: null,
+      topArtists: [],
     }
+  },
+  async created() {
+    await this.fetchTopArtists()
+    setInterval(this.fetchTopArtists, 3600000) // Update every hour
   },
   methods: {
     async fetchTopArtists() {
       try {
         const response = await axios.get('http://localhost:3000/api/top-artists')
-        this.topArtists = response.data.artists.map((artist) => ({
-          id: artist.id,
-          name: artist.name,
-        }))
+        this.topArtists = response.data
       } catch (error) {
-        console.error('Error fetching Spotify data:', error)
+        console.error('Error fetching top artists:', error)
       }
     },
-    startFetching() {
-      this.fetchTopArtists()
-      this.intervalId = setInterval(this.fetchTopArtists, 3600000) // Fetch data every hour
-    },
-    stopFetching() {
-      if (this.intervalId) {
-        clearInterval(this.intervalId)
-      }
-    },
-  },
-  mounted() {
-    this.startFetching()
-  },
-  beforeUnmount() {
-    this.stopFetching()
   },
 }
 </script>
 
-<style scoped>
-.spotify-data {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-</style>
+<template>
+  <div>
+    <h3 class="text-4xl">Top 10 Artists in the Last 30 Days</h3>
+    <ul>
+      <li v-for="artist in topArtists" :key="artist.id">
+        {{ artist.name }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<style></style>
