@@ -38,16 +38,26 @@ export default {
     <p>{{ description }}</p>
     <p>Tech Stack: {{ techStack }}</p>
     <p>
-      Github: <a :href="githubLink">{{ githubRepoName }}</a>
+      Github:
+      <a :href="githubLink">
+        {{ githubRepoName }}
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
     </p>
     <p>
       Live Demo:
       <span v-if="liveDemoLink">
-        <a :href="liveDemoLink">{{ liveDemoLink }}</a>
+        <a :href="liveDemoLink"
+          >{{ liveDemoLink }} <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
       </span>
       <span v-else> Unavailable </span>
     </p>
   </div>
 </template>
 
-<style></style>
+<style>
+.project-card a {
+  text-decoration: underline;
+}
+</style>

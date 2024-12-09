@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import '@fortawesome/fontawesome-free/css/all.css'
+
 import Navbar from './components/TheNavbar.vue'
 import Footer from './components/TheFooter.vue'
 
