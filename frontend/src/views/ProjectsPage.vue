@@ -15,7 +15,7 @@ export default {
           description:
             'A personal portfolio website built with Vue.js, Express.js and Tailwind CSS.',
           techStack: 'Vue.js, Express.js, Tailwind CSS, JavaScript, Vercel',
-          githubLink: 'https://github.com/shaanprk/Vue-Personal-Portfolio',
+          githubLink: 'https://github.com/shaanprk/vue-personal-portfolio',
           liveDemoLink: 'https://www.google.com/',
         },
         {
@@ -49,7 +49,7 @@ export default {
           title: 'Mods and Plugins',
           description: 'Collection of plugins and mods I created/modified in Java and Kotlin',
           techStack: 'Java, Kotlin, Spigot, Bukkit',
-          githubLink: 'https://github.com/shaanprk/Mods-Plugins',
+          githubLink: 'https://github.com/shaanprk/mods-and-plugins',
           liveDemoLink: '',
         },
       ],

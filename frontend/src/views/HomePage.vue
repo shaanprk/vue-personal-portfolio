@@ -1,25 +1,11 @@
 <script>
+import greetings from '@/assets/greetings.json' // Imported from https://github.com/novellac/multilanguage-hello-json/tree/master with minor spelling corrections
+
 export default {
   name: 'HomePage',
   data() {
     return {
-      greetingArr: [
-        { message: 'Hello', language: 'English' },
-        { message: '안녕', language: 'Korean' },
-        { message: 'مرحبا', language: 'Arabic' },
-        { message: 'Ciao', language: 'Italian' },
-        { message: 'Bonjour', language: 'French' },
-        { message: 'こんにちは', language: 'Japanese' },
-        { message: '你好', language: 'Chinese (Mandarin)' },
-        { message: 'Hola', language: 'Spanish' },
-        { message: 'Hallo', language: 'German' },
-        { message: 'Привет', language: 'Russian' },
-        { message: 'नमस्ते', language: 'Hindi' },
-        { message: 'Hej', language: 'Swedish' },
-        { message: 'Salam', language: 'Persian' },
-        { message: 'Shalom', language: 'Hebrew' },
-        { message: 'Kamusta', language: 'Filipino' },
-      ],
+      greetingArr: greetings,
       greeting: { message: 'Hello', language: 'English' },
     }
   },

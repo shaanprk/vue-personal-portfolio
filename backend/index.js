@@ -2,21 +2,27 @@ import dotenv from "dotenv";
 import express from "express";
 import querystring from "querystring";
 import axios from "axios";
+import cors from "cors";
+// import cron from "node-cron";
 
 // Load environment variables from .env file
 dotenv.config();
 // Create an Express application
 const app = express();
+app.use(cors());
 
 // Variables from the .env file
 const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const REDIRECT_URI = process.env.SPOTIFY_REDIRECT_URI;
+const PORT = process.env.PORT || 3000;
 
 // Tokens
 let accessToken;
 let refreshToken;
+// let lastUpdated = null;
 
+// Helper function for Step 1.
 // Generate a random string
 const generateRandomString = function (length) {
   let text = "";
@@ -87,13 +93,7 @@ app.get("/callback", async (req, res) => {
       refreshToken = response.data.refresh_token;
       console.log("refreshToken", refreshToken);
 
-      res.redirect(
-        "/#" +
-          querystring.stringify({
-            access_token: accessToken,
-            refresh_token: refreshToken,
-          })
-      );
+      res.redirect("/top-items");
     } catch (error) {
       res.redirect(
         "/#" +
@@ -159,6 +159,6 @@ app.get("/refresh_token", async (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
