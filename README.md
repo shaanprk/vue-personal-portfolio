@@ -3,13 +3,17 @@
 </h1>
 
 <h4 align="center">
-  Personal Portfolio Website created using Vue.js, Tailwind CSS and hosted on Vercel.
+  Personal Portfolio Website created using Vue.js, Express.js, Tailwind CSS and hosted on Vercel.
 </h4>
 
 <p align="center">
   <a href="https://vuejs.org/">
     <img src="https://img.shields.io/badge/Vue.js-v3.5.10-_?logo=vuedotjs&labelColor=%20%2334485f&color=%2341b982"
          alt="Vue.js Badge">
+  </a>
+  <a href="https://expressjs.com/">
+    <img src="https://img.shields.io/badge/v4.21.2-_?logo=express&logoColor=%23000000&label=Express&color=%23000000"
+         alt="Express.js Badge">
   </a>
   <a href="https://tailwindcss.com/">
     <img src="https://img.shields.io/badge/Tailwind%20CSS-v3.4.13-_?logo=tailwindcss&labelColor=%20%2334485f&color=%2338bcf9"
