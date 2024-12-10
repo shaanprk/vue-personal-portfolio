@@ -12,7 +12,8 @@ export default {
         {
           id: 1,
           title: 'Portfolio Website',
-          description: 'A personal portfolio website built with Vue.js and Tailwind CSS.',
+          description:
+            'A personal portfolio website built with Vue.js, Express.js and Tailwind CSS.',
           techStack: 'Vue.js, Express.js, Tailwind CSS, JavaScript, Vercel',
           githubLink: 'https://github.com/shaanprk/Vue-Personal-Portfolio',
           liveDemoLink: 'https://www.google.com/',
@@ -21,7 +22,7 @@ export default {
           id: 2,
           title: 'Credit Card Points Tracker',
           description:
-            'Financial Tracker to track purchases and points across various credit cards',
+            'Credit Card Points Tracker to track purchases and points across various credit cards',
           techStack: 'React, Django, PostgreSQL, REST API',
           githubLink: 'https://github.com/shaanprk/cc-points-analyzer',
           liveDemoLink: '',

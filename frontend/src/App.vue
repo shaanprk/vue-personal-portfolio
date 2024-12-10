@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex-col min-h-screen">
     <Navbar />
-    <router-view />
+    <main class="flex-grow">
+      <router-view />
+    </main>
     <Footer />
   </div>
 </template>
@@ -22,4 +24,10 @@ export default {
 
 <style>
 /* App-level styling */
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
 </style>

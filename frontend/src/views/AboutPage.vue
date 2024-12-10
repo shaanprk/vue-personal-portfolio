@@ -5,7 +5,7 @@ export default {
   name: 'AboutPage',
   data() {
     return {
-      pdfUrl: '../assets/Resume - December 9, 2024.pdf',
+      pdfUrl: '/Resume.pdf',
     }
   },
   components: {
@@ -42,13 +42,7 @@ export default {
 
     <div class="resume my-8">
       <h3 class="text-2xl mb-2">My Resume</h3>
-      <iframe
-        :src="pdfUrl"
-        width="100%"
-        height="600px"
-        type="application/pdf"
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
+      <iframe :src="pdfUrl" width="60%" height="850px" style="border: none"></iframe>
     </div>
   </div>
 </template>

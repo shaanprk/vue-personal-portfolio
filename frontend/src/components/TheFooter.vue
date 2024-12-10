@@ -29,11 +29,17 @@ export default {
 </template>
 
 <style scoped>
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   left: 0;
+} */
+footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 </style>
