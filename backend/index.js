@@ -57,9 +57,7 @@ app.get("/login", function (req, res) {
 // http://localhost:3000/callback
 app.get("/callback", async (req, res) => {
   const code = req.query.code || null;
-  console.log("code", code);
   const state = req.query.state || null;
-  console.log("state", state);
 
   if (state === null) {
     res.redirect(
@@ -87,11 +85,12 @@ app.get("/callback", async (req, res) => {
         }
       );
 
-      console.log("response", response.data);
+      // console.log("response", response.data);
       accessToken = response.data.access_token;
-      console.log("accessToken", accessToken);
+      console.log("og accessToken", accessToken);
       refreshToken = response.data.refresh_token;
-      console.log("refreshToken", refreshToken);
+      console.log("og refreshToken", refreshToken);
+      console.log("--------------------");
 
       res.redirect("/top-items");
     } catch (error) {
@@ -149,10 +148,16 @@ app.get("/refresh_token", async (req, res) => {
       }
     );
 
+    // console.log(response.data);
     accessToken = response.data.access_token;
-    res.json({
-      access_token: accessToken,
-    });
+    console.log("refreshed accessToken", accessToken);
+    console.log("refreshed refreshToken", refreshToken);
+    console.log("--------------------");
+    // res.json({
+    //   access_token: accessToken,
+    //   refresh_token: refreshToken,
+    // });
+    res.redirect("/top-items");
   } catch (error) {
     res.status(500).send(error.message);
   }

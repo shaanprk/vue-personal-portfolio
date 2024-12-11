@@ -27,7 +27,7 @@ export default {
       <p>- Programming Languages: Java, Python, C/C++, JavaScript, TypeScript</p>
       <p>- Frameworks & Libraries: React, Vue.js, Express.js, Django</p>
       <p>- Database Systems: PostgreSQL, MongoDB, SQLite</p>
-      <p>- Developer Tools: VS Code, Eclipse, IntelliJ, Git, Docker</p>
+      <p>- Developer Tools: VS Code, Eclipse, IntelliJ, Git, Docker, Node.js</p>
     </div>
 
     <div class="personal">

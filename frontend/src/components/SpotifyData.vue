@@ -25,11 +25,27 @@ export default {
 }
 </script>
 
-<template>
+<!-- <template>
   <div>
     <h3 class="text-4xl">Top 10 Artists in the Last 30 Days</h3>
     <ul class="artist-list">
       <li v-for="artist in topArtists" :key="artist.id" class="artist-item">
+        <a :href="artist.external_urls.spotify" target="_blank" class="artist-link">
+          <img :src="artist.images[0]?.url" :alt="artist.name" class="artist-image" />
+          <p class="artist-name">{{ artist.name }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template> -->
+
+<template>
+  <div>
+    <h3 class="text-4xl">Top 10 Artists in the Last 30 Days</h3>
+    <!-- <p>Last Updated: {{ new Date(lastUpdated).toLocaleString() }}</p> -->
+    <ul class="artist-list">
+      <li v-for="(artist, index) in topArtists" :key="artist.id" class="artist-item">
+        <span class="artist-number">{{ index + 1 }}.</span>
         <a :href="artist.external_urls.spotify" target="_blank" class="artist-link">
           <img :src="artist.images[0]?.url" :alt="artist.name" class="artist-image" />
           <p class="artist-name">{{ artist.name }}</p>
