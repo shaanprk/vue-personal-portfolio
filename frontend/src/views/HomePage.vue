@@ -1,6 +1,6 @@
 <script>
 import greetings from '@/assets/greetings.json' // Imported from https://github.com/novellac/multilanguage-hello-json/tree/master with minor spelling corrections
-import ZenBrush from '@/assets/Zen Brush.svg' // Import the SVG file
+import Navbar from '../components/TheNavbar.vue'
 
 export default {
   name: 'HomePage',
@@ -8,7 +8,6 @@ export default {
     return {
       greetingArr: greetings,
       greeting: { message: 'Hello', language: 'English' },
-      zenBrush: ZenBrush, // Add the SVG to the data
     }
   },
   methods: {
@@ -18,75 +17,52 @@ export default {
       return this.greeting
     },
   },
+  components: {
+    Navbar,
+  },
 }
 </script>
 
 <template>
-  <div class="content">
-    <div class="intro">
-      <div class="greeting">
-        <h1 class="text-8xl message">{{ randomGreeting().message }}!</h1>
-        <p class="language">
-          <em>Greeting in {{ greeting.language }}</em>
-        </p>
+  <Navbar />
+  <div class="intro flex flex-col justify-center items-center text-[#2c3e50] p-8">
+    <div class="flex justify-center items-center gap-3">
+      <div class="greeting mb-8 inline-flex flex-col items-center justify-center">
+        <h1 class="message text-7xl font-bold mb-4 text-center">{{ randomGreeting().message }}!</h1>
+        <p class="language text-xs italic self-end">Greeting in {{ greeting.language }}</p>
       </div>
 
-      <p class="text-3xl">Welcome to my portfolio!</p>
-      <h4 class="text-xl">My name is <em>Jeongbin Sean Park.</em></h4>
-      <p>
-        I'm a Software Engineer from San Jose, California. I specialize in Full-Stack Development.
-      </p>
-      <p>Explore my portfolio to learn more about my work and my background.</p>
+      <div class="short-message mb-8">
+        <h4 class="text-5xl">My name is <br /><span class="font-bold">Jeongbin Sean Park</span></h4>
+      </div>
     </div>
 
-    <div class="to-projects">
-      <h3 class="text-2xl my-4">Check out my work!</h3>
-      <router-link to="/projects" class="border-2 rounded-lg p-2">
-        <button class="text-white font-bold rounded" style="margin: 10px">Projects</button>
-      </router-link>
-    </div>
+    <p class="text-3xl">Welcome to My Portfolio</p>
+  </div>
+
+  <div class="summary text-center">
+    <p>
+      I'm a Software Engineer from San Jose, California. I specialize in Full-Stack Development.
+    </p>
+    <p>Explore my portfolio to learn more about my work and my background.</p>
+  </div>
+
+  <div class="to-projects text-center">
+    <h3 class="text-2xl mb-4">Check out my work!</h3>
+    <router-link to="/projects">
+      <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Projects</button>
+    </router-link>
   </div>
 </template>
 
 <style scoped>
-.message {
-  line-height: 1.2; /* Adjust line height as needed */
-  margin-bottom: 1rem; /* Add margin to push down the language message */
-  font-weight: bold;
+.to-projects button {
+  transition: background-color 0.3s ease;
 }
-
-.language {
-  text-align: right;
-  width: 100%;
-  font-size: 0.75rem; /* Adjust font size as needed */
-  color: #555; /* Adjust color as needed */
+.to-projects button:hover {
+  background-color: #1d72b8;
 }
-
 .intro {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-container {
-  position: relative;
-  display: inline-block;
-}
-
-.button-container img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.button-container:hover img {
-  opacity: 1;
+  height: calc(100vh);
 }
 </style>

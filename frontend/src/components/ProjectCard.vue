@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <div class="project-card border border-gray-300 rounded-lg p-4">
+  <div class="project-card">
     <h3 class="title">{{ title }}</h3>
     <p class="description">{{ description }}</p>
     <h2 class="text-xl"><b>Tech Stack</b></h2>
@@ -73,8 +73,13 @@ export default {
 
 <style scoped>
 .project-card {
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -96,10 +101,6 @@ export default {
   font-size: 1.5em;
 }
 
-.description {
-  margin-bottom: 1rem; /* Add space between description and tech stack */
-}
-
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +116,6 @@ export default {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  white-space: normal; /* Allow line breaks within tech names */
 }
 
 .tech-item:hover {
@@ -129,18 +129,18 @@ export default {
 }
 
 .links {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .github-link {
-  justify-self: end;
+  margin-right: 10px;
 }
 
 .livedemo-link {
-  justify-self: start;
+  margin-left: 10px;
 }
 
 .separator {

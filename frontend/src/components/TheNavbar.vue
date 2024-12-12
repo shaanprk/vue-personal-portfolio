@@ -1,30 +1,28 @@
 <template>
-  <header class="bg-gray-800 p-4">
-    <div class="flex items-center m-1 justify-between">
+  <header class="navbar bg-transparent fixed top-0 z-50 p-[50px] w-[calc(100%-40px)]">
+    <div class="flex items-center justify-between">
       <router-link to="/">
-        <img src="../assets/Cropped_Image.png" class="navbar-logo" />
+        <img src="../assets/Cropped_Image.png" class="navbar-logo w-24 rounded-full" />
       </router-link>
 
-      <nav class="navbar">
-        <ul class="flex space-x-4 text-[#383838] w-full justify-between">
+      <nav>
+        <ul class="flex space-x-10 text-[#383838] w-full justify-between">
           <li class="navbar-links">
             <router-link to="/">Home</router-link>
-            <img src="../assets/vecteezy_chinese-brush-stroke_10829827.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
           </li>
           <li class="navbar-links">
             <router-link to="/projects">Projects</router-link>
-            <img src="../assets/vecteezy_chinese-brush-stroke_10829827.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
           </li>
           <li class="navbar-links">
             <router-link to="/about">About</router-link>
-            <img src="../assets/vecteezy_chinese-brush-stroke_10829827.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
           </li>
-          <li class="navbar-links">
-            <router-link to="/contact">
-              Contact
-              <img src="../assets/vecteezy_chinese-brush-stroke_10829827.png" class="nav-arrow" />
-            </router-link>
-          </li>
+          <!-- <li class="navbar-links">
+            <router-link to="/contact"> Contact </router-link>
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -32,15 +30,6 @@
 </template>
 
 <style scoped>
-.bg-gray-800 {
-  background-color: #d6c7b2;
-}
-
-.navbar-logo {
-  width: 100px;
-  border-radius: 100%;
-}
-
 .navbar-links {
   font-family: 'Noto Serif KR', serif;
   color: #2b2b2b;

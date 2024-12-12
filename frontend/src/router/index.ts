@@ -32,15 +32,15 @@ const routes = [
       description: 'Explore the work of Jeongbin Sean Park',
     },
   },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: ContactPage,
-    meta: {
-      title: 'Contact',
-      description: 'Reach out and connect with Jeongbin Sean Park',
-    },
-  },
+  // {
+  //   path: '/contact',
+  //   name: 'Contact',
+  //   component: ContactPage,
+  //   meta: {
+  //     title: 'Contact',
+  //     description: 'Reach out and connect with Jeongbin Sean Park',
+  //   },
+  // },
 ]
 
 const router = createRouter({
