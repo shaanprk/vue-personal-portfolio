@@ -31,10 +31,10 @@
 
 <style scoped>
 .navbar-links {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Nanum Brush Script', serif;
   color: #2b2b2b;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 44px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative;
@@ -42,7 +42,7 @@
 
 .nav-arrow {
   position: absolute;
-  bottom: -15px; /* Adjust as needed */
+  bottom: 0px; /* Adjust as needed */
   height: 15px;
   width: 100%;
   transform: rotate(4deg);

@@ -49,8 +49,8 @@ export default {
         {{ tech.name }}
       </a>
     </div>
-    <div class="links flex justify-center items-center w-full">
-      <div class="link-item github-link mr-[10px]">
+    <div class="links grid grid-cols-[1fr_auto_1fr] items-center">
+      <div class="link-item github-link text-right">
         Github:
         <a :href="githubLink" class="underline">
           {{ githubRepoName }}
@@ -58,10 +58,10 @@ export default {
         </a>
       </div>
       <span class="separator my-0 mx-[10px]">|</span>
-      <div class="link-item livedemo-link ml-[10px]">
+      <div class="link-item livedemo-link text-left">
         Live Demo:
         <span v-if="liveDemoLink">
-          <a :href="liveDemoLink">
+          <a :href="liveDemoLink" class="underline">
             {{ liveDemoLink }} <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </span>

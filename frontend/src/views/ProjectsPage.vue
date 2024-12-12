@@ -19,8 +19,8 @@ export default {
 
 <template>
   <Navbar />
-  <div class="content">
-    <h1 class="text-4xl font-bold my-4">Projects</h1>
+  <div class="content mt-[150px]">
+    <h1 class="text-5xl font-bold text-center mb-[20px]">Projects</h1>
     <div class="projects">
       <ProjectCard
         v-for="project in projects"
@@ -40,5 +40,3 @@ export default {
     </router-link>
   </div>
 </template>
-
-<style></style>

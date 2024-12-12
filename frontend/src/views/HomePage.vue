@@ -41,7 +41,15 @@ export default {
 
     <p class="text-3xl">Welcome to My Portfolio</p>
 
-    <div class="line absolute bottom-0 h-auto">
+    <div class="scroll flex flex-col justify-center items-center absolute bottom-0">
+      <p class="text-xs mb-2">
+        <span class="letter">S</span>
+        <span class="letter">C</span>
+        <span class="letter">R</span>
+        <span class="letter">O</span>
+        <span class="letter">L</span>
+        <span class="letter">L</span>
+      </p>
       <svg
         width="1"
         height="100%"
@@ -54,14 +62,12 @@ export default {
     </div>
   </div>
 
-  <div
-    class="summary text-center h-[calc(100vh-20px)] flex flex-col justify-center items-center relative"
-  >
-    <div class="line absolute top-0 h-auto">
+  <div class="summary flex flex-col justify-center items-center h-[calc(100vh-20px)] relative">
+    <div class="scroll flex flex-col justify-center items-center absolute top-0">
       <svg
         width="1"
         height="100%"
-        viewBox="0 0 1 150"
+        viewBox="0 0 1 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -83,13 +89,48 @@ export default {
 </template>
 
 <style scoped>
-/* .intro {
-  border: 1px solid red;
-} */
-/* .summary {
-  border: 1px solid blue;
-} */
+.letter {
+  display: inline-block;
+  animation: bounce 15s infinite ease-in-out;
+  animation-delay: calc(0.1s * var(--index));
+}
+@keyframes bounce {
+  0%,
+  5% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  2.5% {
+    transform: translateY(-10px); /* Bounce upwards */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+p .letter:nth-child(1) {
+  --index: 1;
+}
+p .letter:nth-child(2) {
+  --index: 2;
+}
+p .letter:nth-child(3) {
+  --index: 3;
+}
+p .letter:nth-child(4) {
+  --index: 4;
+}
+p .letter:nth-child(5) {
+  --index: 5;
+}
+p .letter:nth-child(6) {
+  --index: 6;
+}
+
+.letter + .letter {
+  margin-left: 0.25em;
+}
 .to-projects button {
   transition: background-color 0.3s ease;
 }
