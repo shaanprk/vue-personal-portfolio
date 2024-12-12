@@ -34,31 +34,31 @@ export default {
 
 <template>
   <div class="project-card">
-    <h3 class="title">{{ title }}</h3>
-    <p class="description">{{ description }}</p>
+    <h3 class="title text-center font-bold text-2xl">{{ title }}</h3>
+    <p class="description mb-4">{{ description }}</p>
     <h2 class="text-xl"><b>Tech Stack</b></h2>
-    <div class="tech-stack">
+    <div class="tech-stack flex flex-wrap justify-center mb-4">
       <a
         v-for="tech in techStack"
         :key="tech.name"
         :href="tech.link"
         target="_blank"
-        class="tech-item"
+        class="tech-item flex flex-col items-center m-2 text-center text-inherit underline"
       >
-        <span v-html="tech.svg" class="tech-logo"></span>
+        <span v-html="tech.svg" class="tech-logo w-6 h-6 mb-2"></span>
         {{ tech.name }}
       </a>
     </div>
-    <div class="links">
-      <div class="link-item github-link">
+    <div class="links flex justify-center items-center w-full">
+      <div class="link-item github-link mr-[10px]">
         Github:
-        <a :href="githubLink">
+        <a :href="githubLink" class="underline">
           {{ githubRepoName }}
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
-      <span class="separator">|</span>
-      <div class="link-item livedemo-link">
+      <span class="separator my-0 mx-[10px]">|</span>
+      <div class="link-item livedemo-link ml-[10px]">
         Live Demo:
         <span v-if="liveDemoLink">
           <a :href="liveDemoLink">
@@ -87,63 +87,7 @@ export default {
   align-items: center;
 }
 
-.project-card a {
-  text-decoration: underline;
-}
-
 .project-card + .project-card {
   margin-top: 20px;
-}
-
-.project-card h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.tech-item:hover {
-  text-decoration: underline;
-}
-
-.tech-logo {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0.5rem;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.github-link {
-  margin-right: 10px;
-}
-
-.livedemo-link {
-  margin-left: 10px;
-}
-
-.separator {
-  margin: 0 10px;
 }
 </style>

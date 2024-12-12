@@ -34,7 +34,7 @@
   font-family: 'Noto Serif KR', serif;
   color: #2b2b2b;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative;
