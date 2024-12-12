@@ -39,7 +39,7 @@ body,
 }
 
 body {
-  background-image: url('@/assets/5741_2_.jpg');
+  background-image: url('@/assets/background.jpg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

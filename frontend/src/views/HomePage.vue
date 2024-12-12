@@ -123,7 +123,7 @@ export default {
   }
 }
 .fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
   animation-delay: 1.2s;
   opacity: 0;
 }
@@ -131,7 +131,7 @@ export default {
 .letter {
   display: inline-block;
   animation: bounce 7.5s infinite ease-in-out;
-  animation-delay: calc(2.5s + 0.1s * var(--index));
+  animation-delay: calc(2.7s + 0.1s * var(--index));
 }
 @keyframes bounce {
   0%,
