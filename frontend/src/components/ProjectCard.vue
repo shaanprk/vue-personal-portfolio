@@ -35,7 +35,7 @@ export default {
 <template>
   <div class="project-card">
     <h3 class="title text-center font-bold text-2xl">{{ title }}</h3>
-    <p class="description mb-4">{{ description }}</p>
+    <p class="description mb-4 text-center">{{ description }}</p>
     <h2 class="text-xl"><b>Tech Stack</b></h2>
     <div class="tech-stack flex flex-wrap justify-center mb-4">
       <a

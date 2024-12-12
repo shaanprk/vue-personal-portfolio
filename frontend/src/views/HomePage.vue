@@ -26,23 +26,25 @@ export default {
 <template>
   <Navbar />
   <div
-    class="intro flex flex-col justify-center items-center text-[#2c3e50] p-8 h-[calc(100vh-20px)] relative"
+    class="landing-page flex flex-col justify-center items-center text-[#2c3e50] p-8 h-[calc(100vh-20px)] relative"
   >
-    <div class="flex justify-center items-center gap-3">
+    <div class="initial-message fade-up flex justify-center items-center gap-3">
       <div class="greeting mb-8 inline-flex flex-col items-center justify-center">
         <h1 class="message text-7xl font-bold mb-4 text-center">{{ randomGreeting().message }}!</h1>
         <p class="language text-xs italic self-end">Greeting in {{ greeting.language }}</p>
       </div>
 
-      <div class="short-message mb-8">
-        <h4 class="text-5xl">My name is <br /><span class="font-bold">Jeongbin Sean Park</span></h4>
+      <div class="introduction mb-8">
+        <h4 class="text-5xl">
+          My name is <br /><span class="font-bold">Jeongbin Sean Park.</span>
+        </h4>
       </div>
     </div>
 
-    <p class="text-3xl">Welcome to My Portfolio</p>
+    <p class="welcome fade-up-delay text-3xl">Welcome to My Portfolio</p>
 
     <div class="scroll flex flex-col justify-center items-center absolute bottom-0">
-      <p class="text-xs mb-2">
+      <p class="text-xs mb-2 fade-in">
         <span class="letter">S</span>
         <span class="letter">C</span>
         <span class="letter">R</span>
@@ -56,6 +58,7 @@ export default {
         viewBox="0 0 1 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        class="fade-in"
       >
         <line x1="0.5" y1="0" x2="0.5" y2="100%" stroke="#2B2B2B" />
       </svg>
@@ -70,6 +73,7 @@ export default {
         viewBox="0 0 1 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        class="fade-in"
       >
         <line x1="0.5" y1="0" x2="0.5" y2="100%" stroke="#2B2B2B" />
       </svg>
@@ -89,10 +93,45 @@ export default {
 </template>
 
 <style scoped>
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+.fade-up-delay {
+  animation: fadeUp 0.6s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
 .letter {
   display: inline-block;
-  animation: bounce 15s infinite ease-in-out;
-  animation-delay: calc(0.1s * var(--index));
+  animation: bounce 7.5s infinite ease-in-out;
+  animation-delay: calc(2.5s + 0.1s * var(--index));
 }
 @keyframes bounce {
   0%,

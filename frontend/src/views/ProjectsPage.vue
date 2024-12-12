@@ -19,24 +19,26 @@ export default {
 
 <template>
   <Navbar />
-  <div class="content mt-[150px]">
-    <h1 class="text-5xl font-bold text-center mb-[20px]">Projects</h1>
-    <div class="projects">
-      <ProjectCard
-        v-for="project in projects"
-        :key="project.id"
-        :title="project.title"
-        :description="project.description"
-        :techStack="project.techStack"
-        :githubLink="project.githubLink"
-        :liveDemoLink="project.liveDemoLink"
-      />
+  <div class="projects-page mt-[150px]">
+    <div class="content">
+      <h1 class="text-5xl font-bold text-center mb-8">Projects</h1>
+      <div class="projects">
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.id"
+          :title="project.title"
+          :description="project.description"
+          :techStack="project.techStack"
+          :githubLink="project.githubLink"
+          :liveDemoLink="project.liveDemoLink"
+        />
+      </div>
+      <div class="to-about-me items-center justify-center text-center mt-8">
+        <h3 class="text-2xl">Get to know me better!</h3>
+        <router-link to="/about">
+          <button class="font-bold py-2 px-4 rounded">About me</button>
+        </router-link>
+      </div>
     </div>
-    <h3 class="text-2xl my-4">Get to know me better!</h3>
-    <router-link to="/about">
-      <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-8">
-        About me
-      </button>
-    </router-link>
   </div>
 </template>

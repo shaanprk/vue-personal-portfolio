@@ -6,7 +6,7 @@
       </router-link>
 
       <nav>
-        <ul class="flex space-x-10 text-[#383838] w-full justify-between">
+        <ul class="flex space-x-14 text-[#383838] w-full justify-between">
           <li class="navbar-links">
             <router-link to="/">Home</router-link>
             <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
@@ -34,7 +34,7 @@
   font-family: 'Nanum Brush Script', serif;
   color: #2b2b2b;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 48px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative;

@@ -41,7 +41,7 @@ export default {
 
 <template>
   <div>
-    <h3 class="text-4xl">Top 10 Artists in the Last 30 Days</h3>
+    <h3 class="text-xl">Top 10 Artists in the Last 30 Days</h3>
     <!-- <p>Last Updated: {{ new Date(lastUpdated).toLocaleString() }}</p> -->
     <ul class="artist-list">
       <li v-for="(artist, index) in topArtists" :key="artist.id" class="artist-item">
