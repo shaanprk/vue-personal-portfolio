@@ -10,7 +10,7 @@ const routes = [
     name: 'Home',
     component: HomePage,
     meta: {
-      title: 'Home',
+      title: 'Jeongbin Sean Park - Software Engineer',
       description: "Welcome to Jeongbin Sean Park's Portfolio",
     },
   },
@@ -19,7 +19,7 @@ const routes = [
     name: 'About',
     component: AboutPage,
     meta: {
-      title: 'About',
+      title: 'About Me - Jeongbin Sean Park',
       description: 'Learn more about Jeongbin Sean Park outside of work',
     },
   },
@@ -28,7 +28,7 @@ const routes = [
     name: 'Projects',
     component: ProjectsPage,
     meta: {
-      title: 'Projects',
+      title: 'My Projects - Jeongbin Sean Park',
       description: 'Explore the work of Jeongbin Sean Park',
     },
   },
@@ -46,6 +46,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top
+    return { top: 0 }
+  },
 })
 
 router.beforeEach((to, from, next) => {

@@ -128,7 +128,11 @@ export default {
           <line x1="0.5" y1="0" x2="0.5" y2="100%" stroke="#2B2B2B" />
         </svg>
       </div>
-      <h3 class="text-4xl font-bold">Now onto the fun stuff!</h3>
+      <div class="coming-soon text-center">
+        <h3 class="text-4xl font-bold">Now onto the fun stuff!</h3>
+        <h3 class="text-2xl font-bold mt-8">Coming Soon</h3>
+      </div>
+      <!-- <h3 class="text-4xl font-bold">Now onto the fun stuff!</h3>
       <p class="text-2xl">When I'm not coding, I enjoy:</p>
       <div class="music tile p-4 rounded-lg" @click="toggleMusic">
         <h4 class="title text-xl cursor-pointer flex items-center">
@@ -139,7 +143,7 @@ export default {
           <p>Tune into what I'm listening to:</p>
           <SpotifyData />
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -207,14 +211,14 @@ export default {
 @media (min-width: 768px) {
   .slide-in-right {
     animation: slideInRight 0.6s ease-out forwards;
-    animation-delay: 1.9s;
+    animation-delay: 0.5s;
     opacity: 0;
   }
 
   .slide-in-left {
     animation: slideInLeft 0.6s ease-out forwards;
     opacity: 0;
-    animation-delay: 1.3s;
+    animation-delay: 0.5s;
   }
 }
 
@@ -228,7 +232,7 @@ export default {
 }
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.3s;
   opacity: 0;
 }
 

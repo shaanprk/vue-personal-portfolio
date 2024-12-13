@@ -2,7 +2,7 @@
   <header class="navbar bg-transparent fixed top-0 z-50 p-[50px] w-[calc(100%-40px)]">
     <div class="flex items-center justify-between">
       <router-link to="/">
-        <img src="../assets/Cropped_Image.png" class="navbar-logo w-24 rounded-full" />
+        <img src="../assets/Cropped_Image.png" class="navbar-logo w-24 rounded-full" title="Logo" />
       </router-link>
 
       <nav>

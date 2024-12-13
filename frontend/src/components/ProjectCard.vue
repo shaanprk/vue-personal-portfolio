@@ -52,7 +52,7 @@ export default {
     <div class="links grid grid-cols-[1fr_auto_1fr] items-center">
       <div class="link-item github-link text-right">
         Github:
-        <a :href="githubLink" class="underline">
+        <a :href="githubLink" target="_blank" class="underline">
           {{ githubRepoName }}
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
@@ -61,7 +61,7 @@ export default {
       <div class="link-item livedemo-link text-left">
         Live Demo:
         <span v-if="liveDemoLink">
-          <a :href="liveDemoLink" class="underline">
+          <a :href="liveDemoLink" target="_blank" class="underline">
             {{ liveDemoLink }} <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </span>
