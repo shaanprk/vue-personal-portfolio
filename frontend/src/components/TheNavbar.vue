@@ -20,7 +20,11 @@ export default {
   <header class="navbar bg-transparent fixed z-50 p-[50px] w-[calc(100%-40px)]">
     <div class="flex items-center justify-between">
       <router-link to="/">
-        <img src="../assets/Cropped_Image.png" class="navbar-logo w-24 rounded-full" title="Logo" />
+        <img
+          src="../assets/Cropped_Image.png"
+          class="navbar-logo w-24 rounded-full"
+          title="Logo Picture"
+        />
       </router-link>
 
       <button class="hamburger md:hidden" @click="toggleMenu">
