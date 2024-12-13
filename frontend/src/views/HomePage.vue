@@ -32,7 +32,7 @@ export default {
       class="initial-message fade-up flex justify-center items-center gap-3 max-md:flex-col max-md:text-center"
     >
       <div class="greeting mb-8 inline-flex flex-col items-center justify-center">
-        <h1 class="message text-7xl font-bold mb-4">{{ randomGreeting().message }}!</h1>
+        <h1 class="message text-7xl font-bold mb-4 text-end">{{ randomGreeting().message }}!</h1>
         <p class="language text-xs italic self-end">Greeting in {{ greeting.language }}</p>
       </div>
 

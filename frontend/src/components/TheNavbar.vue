@@ -27,11 +27,13 @@ export default {
         />
       </router-link>
 
-      <button class="hamburger md:hidden" @click="toggleMenu">
-        <span :class="{ open: isMenuOpen }"></span>
-        <span :class="{ open: isMenuOpen }"></span>
-        <span :class="{ open: isMenuOpen }"></span>
-      </button>
+      <div class="md:hidden z-50">
+        <button class="hamburger" @click="toggleMenu">
+          <span :class="{ open: isMenuOpen }"></span>
+          <span :class="{ open: isMenuOpen }"></span>
+          <span :class="{ open: isMenuOpen }"></span>
+        </button>
+      </div>
 
       <nav :class="{ hidden: !isMenuOpen, block: isMenuOpen }" class="md:block">
         <ul class="flex space-x-14 text-[#383838] w-full justify-between">
@@ -56,7 +58,7 @@ export default {
 
       <div
         v-if="isMenuOpen"
-        class="mobile-menu fixed inset-0 bg-white flex flex-col items-center justify-center z-40"
+        class="mobile-menu fixed inset-0 bg-white flex flex-col items-center justify-center z-40 md:hidden"
       >
         <ul class="text-4xl space-y-8">
           <li class="navbar-links">
