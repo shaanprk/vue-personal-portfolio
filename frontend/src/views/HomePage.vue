@@ -36,7 +36,7 @@ export default {
         <p class="language text-xs italic self-end">Greeting in {{ greeting.language }}</p>
       </div>
 
-      <div class="introduction mb-8">
+      <div class="introduction mb-8 inline">
         <h4 class="text-5xl">
           My name is <br /><span class="font-bold">Jeongbin Sean Park.</span>
         </h4>

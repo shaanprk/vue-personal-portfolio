@@ -149,12 +149,12 @@ export default {
 </template>
 
 <style>
-.music {
+/* .music {
   border: 1px solid red;
 }
 .fun-stuff {
   border: 1px solid purple;
-}
+} */
 @keyframes fadeSlideDown {
   from {
     opacity: 0;
