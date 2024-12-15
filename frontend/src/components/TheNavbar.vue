@@ -19,13 +19,27 @@ export default {
 <template>
   <header class="navbar bg-transparent fixed z-50 p-[50px] w-[calc(100%-40px)]">
     <div class="flex items-center justify-between">
-      <router-link to="/">
-        <img
-          src="../assets/Cropped_Image.png"
-          class="navbar-logo w-24 rounded-full"
-          title="Logo Picture"
-        />
+      <!-- <router-link to="/">
+        <img src="../assets/logo.png" class="navbar-logo w-24" title="Logo" />
       </router-link>
+
+      <img
+        src="../assets/signature_horizontal.png"
+        class="navbar-signature w-48"
+        title="Signature"
+      /> -->
+
+      <div class="flex items-center">
+        <router-link to="/">
+          <img src="../assets/logo.png" class="navbar-logo w-24" title="Logo" />
+        </router-link>
+
+        <img
+          src="../assets/signature_horizontal.png"
+          class="navbar-signature w-48 ml-14"
+          title="Signature"
+        />
+      </div>
 
       <div class="md:hidden z-50">
         <button class="hamburger" @click="toggleMenu">
