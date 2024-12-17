@@ -25,8 +25,8 @@ export default {
 </script>
 
 <template>
-  <Navbar />
-  <div class="about-page">
+  <div class="about-page glow">
+    <Navbar />
     <div
       class="serious-introduction h-[calc(100vh-20px)] px-[80px] relative justify-center items-center flex flex-col"
     >
@@ -149,6 +149,29 @@ export default {
 </template>
 
 <style>
+.about-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/bamboo_clear.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-attachment: scroll;
+  opacity: 0.6;
+  z-index: -1;
+}
+.about-page {
+  position: relative;
+  min-height: 100vh;
+}
+.glow {
+  text-shadow: 1px 1px 2px white;
+}
+
 /* .music {
   border: 1px solid red;
 }

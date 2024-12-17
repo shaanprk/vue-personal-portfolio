@@ -72,7 +72,7 @@ export default {
 
       <div
         v-if="isMenuOpen"
-        class="mobile-menu fixed inset-0 bg-white flex flex-col items-center justify-center z-40 md:hidden"
+        class="mobile-menu fixed inset-0 bg-gray-50 flex flex-col items-center justify-center z-40 md:hidden"
       >
         <ul class="text-4xl space-y-8">
           <li class="navbar-links">
