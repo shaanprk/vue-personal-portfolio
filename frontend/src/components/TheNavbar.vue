@@ -53,15 +53,15 @@ export default {
         <ul class="flex space-x-14 text-[#383838] w-full justify-between">
           <li class="navbar-links">
             <router-link to="/">Home</router-link>
-            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" alt="Underline" />
           </li>
           <li class="navbar-links">
             <router-link to="/projects">Projects</router-link>
-            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" alt="Underline" />
           </li>
           <li class="navbar-links">
             <router-link to="/about">About</router-link>
-            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" />
+            <img src="../assets/straight-brush-stroke.png" class="nav-arrow" alt="Underline" />
           </li>
           <!-- <li class="navbar-links">
             <router-link to="/contact"> Contact </router-link>
