@@ -26,5 +26,5 @@
 </p>
 
 <p align="center">
-  Link to my website: <a href="https://binni.dev">inni.dev</a>
+  Link to my website: <a href="https://binni.dev">binni.dev</a>
 </p>
