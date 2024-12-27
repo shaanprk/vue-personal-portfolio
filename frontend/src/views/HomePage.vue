@@ -130,11 +130,12 @@ export default {
   background-image: url('@/assets/bamboo_clear.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 100%;
   background-attachment: scroll;
   opacity: 0.6;
   z-index: -1;
 }
+
 .home-page {
   position: relative;
   min-height: 100vh;
