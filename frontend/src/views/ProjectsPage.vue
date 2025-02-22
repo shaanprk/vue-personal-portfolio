@@ -35,10 +35,10 @@ export default {
             :class="['fade-slide-down', `delay-${index}`]"
           />
         </div>
-        <div class="to-about-me items-center justify-center text-center mt-8">
+        <div class="to-about-me items-center justify-center text-center mt-12 pb-12">
           <h3 class="text-2xl">Get to know me better!</h3>
           <router-link to="/about">
-            <button class="font-bold py-2 px-4 rounded">About me</button>
+            <button class="bg-gray-600 text-white font-bold py-2 px-4 rounded">About me</button>
           </router-link>
         </div>
       </div>

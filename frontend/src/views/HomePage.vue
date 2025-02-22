@@ -109,10 +109,10 @@ export default {
       </p>
       <p>Explore my portfolio to learn more about my work and my background.</p>
 
-      <div class="to-projects text-center">
+      <div class="to-projects text-center padding">
         <h3 class="text-2xl mb-4">Check out my work!</h3>
         <router-link to="/projects">
-          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Projects</button>
+          <button class="bg-gray-600 text-white font-bold py-2 px-4 rounded">Projects</button>
         </router-link>
       </div>
     </div>
@@ -226,6 +226,6 @@ p .letter:nth-child(6) {
   transition: background-color 0.3s ease;
 }
 .to-projects button:hover {
-  background-color: #1d72b8;
+  background-color: oklch(0.13 0.028 261.692);
 }
 </style>

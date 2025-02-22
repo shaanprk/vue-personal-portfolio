@@ -68,16 +68,16 @@ export default {
           <h1 class="text-2xl font-semibold mb-4">Technical Skills</h1>
 
           <h4 class="text-xl font-bold">Programming Languages</h4>
-          <p>Java, Python, C/C++, JavaScript, TypeScript</p>
+          <p>Python, C/C++, JavaScript, TypeScript, Java, R</p>
 
           <h4 class="text-xl font-bold">Frameworks & Libraries</h4>
-          <p>React, Vue.js, Express.js, Django</p>
+          <p>React, Vue.js, Django, Express.js</p>
 
           <h4 class="text-xl font-bold">Database Systems</h4>
-          <p>PostgreSQL, MongoDB, SQLite</p>
+          <p>PostgreSQL, MongoDB, SQLite, Redis</p>
 
           <h4 class="text-xl font-bold">Developer Tools</h4>
-          <p>VS Code, Eclipse, IntelliJ, Git, Docker, Node.js</p>
+          <p>Git, Docker, Node.js, Jest, Linux, Vercel</p>
         </div>
         <div class="empty-div"></div>
         <div class="empty-div"></div>
@@ -90,7 +90,7 @@ export default {
           <h4 class="text-xl font-bold">UCSD Tutor (Dec. 2023—Mar. 2024)</h4>
           <p class="text-xs italic">Computer Science Tutor</p>
 
-          <h4 class="text-xl font-bold">Outlier (May 2024—Present)</h4>
+          <h4 class="text-xl font-bold">Outlier (May 2024—Nov. 2024)</h4>
           <p class="text-xs italic">Freelance Coder & AI Training</p>
         </div>
       </div>
